@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__brand">
+        <span class="nav__logo-circle">A's</span>
+        <span class="nav__brand-text">Abhishek Sable</span>
+      </div>
+      <nav class="nav__links">
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Portfolio</p>
+          <h1>A passionate developer who turns ideas into clean, functional solutions.</h1>
+          <p class="hero__subtitle">
+            
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__tag">Open to work</div>
+          <p class="hero__role">Mumbai, India · Available Remote</p>
+          <div class="hero__stats">
+            <div </div>
+              <span class="hero__stat-number">1+</span>
+              <span class="hero__stat-label">Years experience</span>
+            </div>
+            <div id="projects-stat">
+              <span class="hero__stat-number">6</span>
+              <span class="hero__stat-label">Projects shipped</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section__header">
+          <h2>About</h2>
+          <p>Who I am and how I work.</p>
+        </div>
+        <div class="about">
+          <p>
+            I'm a software developer with a passion for building clean, 
+            user-friendly applications. I enjoy working across the stack — from crafting smooth frontend interfaces to designing solid backend logic. I'm most in my element when solving real-world problems through code, whether it's a sleek web app, 
+            a useful tool, or something that just makes life a little easier.
+          </p>
+          <p>
+            I value clean code, clear communication, and continuous growth. I enjoy collaborating with others, sharing ideas, and learning from every project I take on. Right now,
+             I'm deepening my skills in modern web technologies and always looking for the next challenge that pushes me to grow.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section__header">
+          <h2>Projects</h2>
+          <p>Selected work I’m proud of.</p>
+        </div>
+        <div class="grid projects">
+          <article class="project-card">
+            <div class="project-card__badge">Featured</div>
+            <h3>Codebase Intelligence Platform</h3>
+            <p>
+              A comprehensive platform for deep codebase analysis, featuring complexity metrics,
+              and AI powered architectural insights.
+            </p>
+            <ul class="project-card__tags">
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>Python</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noreferrer">Live Site</a>
+              <a href="https://github.com/a6hxin/Codebase-Intelligence-Platform.git" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Ai Resume Analyzer</h3>
+            <p>
+              AI Resume Analyzer is a Flask-based web application that analyzes resumes and detects skills to generate a resume score.
+            </p>
+            <ul class="project-card__tags">
+              <li>HTML</li>
+              <li>Python</li>
+              <li>API</li>
+              <li>Flask</li>
+              <li>Node.js</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/a6hxin/Ai-Resume-Analyzer.git" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3>Healthcare Chatbot</h3>
+            <p>
+              Healthcare AI Symptom Checker An AI powered symptom checker and triage system
+            </p>
+            <ul class="project-card__tags">
+              <li>Typescript</li>
+              <li>Python</li>
+              <li>UX</li>
+              <li>UI</li>
+               <li>JavaScript</li>
+            
+            </ul>
+            <div class="project-card__links">
+              <a href="https://github.com/a6hxin/healthcare-ai.git" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section__header">
+          <h2>Skills</h2>
+          <p>Tools and technologies I use.</p>
+        </div>
+        <div class="grid skills">
+          <div class="skills__group">
+            <h3>Development</h3>
+            <ul>
+              <li>HTML · CSS · JavaScript</li>
+              <li>C++ · C# · Python · Java</li>
+              <li>React · Next.js · Flask · MongoDB</li>
+              <li>Node.js · REST APIs</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Design</h3>
+            <ul>
+              <li>Figma · Adobe XD · Pencil</li>
+              <li>Design systems · Autocad</li>
+              <li>Prototyping & wireframing</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Other</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Agile workflows</li>
+              <li>Collaboration & communication</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--accent">
+        <div class="section__header">
+          <h2>Contact</h2>
+          <p>Let’s build something together.</p>
+        </div>
+        <div class="contact">
+          <p>
+            Ready to collaborate or have a project in mind? Drop your email and
+            message below and I’ll reply within 1–2 days.
+          </p>
+          <form id="contact-form" class="contact-form">
+            <div class="contact-form__field">
+              <label for="contact-email">Your email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="contact-form__field">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="4"
+                placeholder="Tell me a bit about your project or question..."
+                required
+              ></textarea>
+            </div>
+            <button href="success.html" type="submit" class="btn btn--primary">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Abhishek Sable. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="https://github.com/a6hxin" target="_blank" rel="noreferrer"
+          >GitHub</a
+        >
+        <a href="https://www.linkedin.com/in/a6hxin" target="_blank" rel="noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile · Abhishek Sable</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav__brand">
+        <span class="nav__logo-circle">A's</span>
+        <span class="nav__brand-text">Abhishek Sable</span>
+      </div>
+      <nav class="nav__links">
+        <a href="profile.html">Profile</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section profile">
+        <div class="section__header">
+          <h2>Profile</h2>
+          <p>A LinkedIn-style snapshot of who I am.</p>
+        </div>
+        <div class="profile__layout">
+          <aside class="profile__sidebar">
+            <div class="profile__photo">
+              <!-- Replace with an <img> when you have your photo -->
+              <div class="profile__photo-placeholder"><img src="pen.jpeg" alt="logo"></div>
+            </div>
+            <div class="profile__summary">
+              <h3>Abhishek Sable</h3>
+              <p class="profile__role">Software Developer · Mumbai, India</p>
+              <p class="profile__bio">
+                I build clean, user-focused applications with a strong foundation in both
+                frontend and backend development.
+              </p>
+            </div>
+          </aside>
+
+          <div class="profile__content">
+            <section class="profile__section">
+              <h3>Experience</h3>
+              <div class="profile__item">
+              <h3 class="section___header"><a href="https://www.hdfcsec.com">HDFC Sec</a></h3>
+                <h4>Software Developer</h4>
+                <p class="profile__meta">June 2025 – Sept 2025 · On-Site</p>
+                <p>
+                  Contributed to the design, development, and deployment of technology solutions at one of India's leading broking firms, working across the full stack to support high-performance financial platforms.
+                </p>
+              </div>
+            </section>
+
+            <section class="profile__section">
+              <h3>Education</h3>
+              <div class="profile__item">
+                <h4>Bachelor’s Degree</h4>
+                <p class="profile__meta">University Of Mumbai · 2024 – 2028</p>
+                <p>
+                  Information Technology
+                </p>
+              </div>
+              <div class="profile__item">
+                <h4>Higher Secondary School</h4>
+                <p class="profile__meta">Maharashtra State Board · 2023 – 2024</p>
+                <p>
+                   Science (PCMB) + Computer Science
+                </p>
+              </div>
+              <div class="profile__item">
+                <h4>Secondary School</h4>
+                <p class="profile__meta">Maharashtra State Board · 2022 – 2022</p>
+                <p>
+                 Science(PCMB)
+                </p>
+              </div>
+            </section>
+
+            <section class="profile__section">
+              <h3>Social Profiles</h3>
+              <ul class="profile__links">
+                <li>
+                  <a href="https://www.linkedin.com/in/a6hxin" target="_blank" rel="noreferrer">
+                    <span class="profile__icon profile__icon--linkedin">in</span>
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/a6hxin" target="_blank" rel="noreferrer">
+                    <span class="profile__icon profile__icon--github">G</span>
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="profile__section">
+              <h3>Activity</h3>
+              <ul class="profile__activity">
+                <li class="profile__activity-item">
+                  <span class="profile__activity-title">
+                    Shipped Codebase Intelligence Platform
+                  </span>
+                  <span class="profile__activity-meta">Recently · Full-stack project</span>
+                </li>
+                <li class="profile__activity-item">
+                  <span class="profile__activity-title">
+                    Built AI Resume Analyzer
+                  </span>
+                  <span class="profile__activity-meta">Exploring AI + developer tools</span>
+                </li>
+                <li class="profile__activity-item">
+                  <span class="profile__activity-title">
+                    Experimenting with healthcare AI chatbot flows
+                  </span>
+                  <span class="profile__activity-meta">Learning conversational UX</span>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--accent">
+        <div class="section__header">
+          <h2>Contact</h2>
+          <p>Let’s build something together.</p>
+        </div>
+        <div class="contact">
+          <p>
+            Ready to collaborate or have a project in mind? Drop your email and
+            message below and I’ll reply within 1–2 days.
+          </p>
+          <form id="contact-form-profile" class="contact-form">
+            <div class="contact-form__field">
+              <label for="contact-email-profile">Your email</label>
+              <input
+                type="email"
+                id="contact-email-profile"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="contact-form__field">
+              <label for="contact-message-profile">Message</label>
+              <textarea
+                id="contact-message-profile"
+                name="message"
+                rows="4"
+                placeholder="Tell me a bit about your project or question..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" href="success.html" class="btn btn--primary">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Abhishek Sable. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="https://github.com/a6hxin" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/a6hxin" target="_blank" rel="noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
